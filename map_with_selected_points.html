@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c99bf9a9ec3e041dab5e1de99315db23 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c99bf9a9ec3e041dab5e1de99315db23" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c99bf9a9ec3e041dab5e1de99315db23 = L.map(
+                "map_c99bf9a9ec3e041dab5e1de99315db23",
+                {
+                    center: [50.4376477, 2.8132745],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a9e2c7bee755221734cebab8f0510ebf = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_a9e2c7bee755221734cebab8f0510ebf.addTo(map_c99bf9a9ec3e041dab5e1de99315db23);
+        
+    
+            var marker_cluster_841249a01be385a20c311ce7000957c1 = L.markerClusterGroup(
+                {"maxClusterRadius": 20}
+            );
+        
+    
+            var marker_b93111fbc5f6de4e264e44b650aaecef = L.marker(
+                [50.4376477, 2.8132745],
+                {}
+            ).addTo(marker_cluster_841249a01be385a20c311ce7000957c1);
+        
+    
+        var popup_fcb216283a8d229171a63bda494fdb26 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_130be6bb7af03b33c9d40788a1b3337b = $(`<div id="html_130be6bb7af03b33c9d40788a1b3337b" style="width: 100.0%; height: 100.0%;"><b>Adresse :</b> 4, Rue Charles Moisson, Lens, Pas-de-Calais, Hauts-de-France, France métropolitaine, 62300, France<br><b>Coords :</b> (50.4376477, 2.8132745)<br><b>Élévation :</b> 47.0 meters</div>`)[0];
+                popup_fcb216283a8d229171a63bda494fdb26.setContent(html_130be6bb7af03b33c9d40788a1b3337b);
+            
+        
+
+        marker_b93111fbc5f6de4e264e44b650aaecef.bindPopup(popup_fcb216283a8d229171a63bda494fdb26)
+        ;
+
+        
+    
+    
+            var marker_fa75f034745a504e57427e3679dbd7db = L.marker(
+                [50.4422259, 2.8317825],
+                {}
+            ).addTo(marker_cluster_841249a01be385a20c311ce7000957c1);
+        
+    
+        var popup_d62c52fedf1a7ae7e18f0a363b8d08fb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_758fa1dd610bc46428bdf47d5f8650b4 = $(`<div id="html_758fa1dd610bc46428bdf47d5f8650b4" style="width: 100.0%; height: 100.0%;"><b>Adresse :</b> Rue Salvador Allende, Lens, Pas-de-Calais, Hauts-de-France, France métropolitaine, 62300, France<br><b>Coords :</b> (50.4422259, 2.8317825)<br><b>Élévation :</b> 51.0 meters</div>`)[0];
+                popup_d62c52fedf1a7ae7e18f0a363b8d08fb.setContent(html_758fa1dd610bc46428bdf47d5f8650b4);
+            
+        
+
+        marker_fa75f034745a504e57427e3679dbd7db.bindPopup(popup_d62c52fedf1a7ae7e18f0a363b8d08fb)
+        ;
+
+        
+    
+    
+            var marker_58ef92cd7194b2e75f63a3558fb97d64 = L.marker(
+                [50.439834, 2.8475653],
+                {}
+            ).addTo(marker_cluster_841249a01be385a20c311ce7000957c1);
+        
+    
+        var popup_1369e2617c7a4332f73da83c4cc77c60 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e0e1367f04a565c54c2954aca50cfb1c = $(`<div id="html_e0e1367f04a565c54c2954aca50cfb1c" style="width: 100.0%; height: 100.0%;"><b>Adresse :</b> Route de Lille, Lens, Pas-de-Calais, Hauts-de-France, France métropolitaine, 62300, France<br><b>Coords :</b> (50.439834, 2.8475653)<br><b>Élévation :</b> 38.0 meters</div>`)[0];
+                popup_1369e2617c7a4332f73da83c4cc77c60.setContent(html_e0e1367f04a565c54c2954aca50cfb1c);
+            
+        
+
+        marker_58ef92cd7194b2e75f63a3558fb97d64.bindPopup(popup_1369e2617c7a4332f73da83c4cc77c60)
+        ;
+
+        
+    
+    
+            var marker_e53ef28218357331380d5bd6b35c0318 = L.marker(
+                [50.4416194, 2.8430953],
+                {}
+            ).addTo(marker_cluster_841249a01be385a20c311ce7000957c1);
+        
+    
+        var popup_7cc0891431f24c89bce5af4209fe4d3a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ac8438ac93e00a813ccdd22b3e6e454e = $(`<div id="html_ac8438ac93e00a813ccdd22b3e6e454e" style="width: 100.0%; height: 100.0%;"><b>Adresse :</b> 12, Rue des Alouettes, Lens, Pas-de-Calais, Hauts-de-France, France métropolitaine, 62300, France<br><b>Coords :</b> (50.4416194, 2.8430953)<br><b>Élévation :</b> 47.0 meters</div>`)[0];
+                popup_7cc0891431f24c89bce5af4209fe4d3a.setContent(html_ac8438ac93e00a813ccdd22b3e6e454e);
+            
+        
+
+        marker_e53ef28218357331380d5bd6b35c0318.bindPopup(popup_7cc0891431f24c89bce5af4209fe4d3a)
+        ;
+
+        
+    
+    
+            var marker_e47666c69e81eec828229e47a3a0d454 = L.marker(
+                [50.441009, 2.8096813],
+                {}
+            ).addTo(marker_cluster_841249a01be385a20c311ce7000957c1);
+        
+    
+        var popup_8d7aeee14ea4fb32f91a0984c6f6c83b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_54cbcc321dd76234f58c73ea83679874 = $(`<div id="html_54cbcc321dd76234f58c73ea83679874" style="width: 100.0%; height: 100.0%;"><b>Adresse :</b> Place du Jeu de Balle, Cité n° 12, Lens, Pas-de-Calais, Hauts-de-France, France métropolitaine, 62300, France<br><b>Coords :</b> (50.441009, 2.8096813)<br><b>Élévation :</b> 49.0 meters</div>`)[0];
+                popup_8d7aeee14ea4fb32f91a0984c6f6c83b.setContent(html_54cbcc321dd76234f58c73ea83679874);
+            
+        
+
+        marker_e47666c69e81eec828229e47a3a0d454.bindPopup(popup_8d7aeee14ea4fb32f91a0984c6f6c83b)
+        ;
+
+        
+    
+    
+            marker_cluster_841249a01be385a20c311ce7000957c1.addTo(map_c99bf9a9ec3e041dab5e1de99315db23);
+        
+    
+            map_c99bf9a9ec3e041dab5e1de99315db23.fitBounds(
+                [[50.4376477, 2.8096813], [50.4422259, 2.8475653]],
+                {}
+            );
+        
+</script>
+</html>
